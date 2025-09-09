@@ -95,7 +95,6 @@ HTTP Request
                 │
                 ▼
              Base de datos
-</details>
 
 
 
