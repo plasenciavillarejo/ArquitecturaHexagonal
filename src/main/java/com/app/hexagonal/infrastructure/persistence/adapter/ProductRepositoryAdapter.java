@@ -1,20 +1,20 @@
-package com.app.hexagonal.infrastructure.facade.service.impl;
+package com.app.hexagonal.infrastructure.persistence.adapter;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.app.hexagonal.application.service.facade.IProductFacadeService;
+import com.app.hexagonal.application.port.out.IProductRepositoryPort;
 import com.app.hexagonal.domain.model.ProductModel;
-import com.app.hexagonal.infrastructure.convert.mapper.ProductEntityToModelConvertMapper;
-import com.app.hexagonal.infrastructure.dao.IProductDao;
+import com.app.hexagonal.infrastructure.persistence.convert.mapper.ProductEntityToModelConvertMapper;
+import com.app.hexagonal.infrastructure.persistence.dao.IProductDao;
 
 @Service
-public class ProductFacadeService implements IProductFacadeService {
+public class ProductRepositoryAdapter implements IProductRepositoryPort {
 
   private final IProductDao productDao;
   private final ProductEntityToModelConvertMapper productEntityToModelConvertMapper;
 
-  public ProductFacadeService(IProductDao productDao,
+  public ProductRepositoryAdapter(IProductDao productDao,
       ProductEntityToModelConvertMapper productEntityToModelConvertMapper) {
     this.productDao = productDao;
     this.productEntityToModelConvertMapper = productEntityToModelConvertMapper;

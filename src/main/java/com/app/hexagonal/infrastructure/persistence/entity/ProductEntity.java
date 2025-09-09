@@ -1,4 +1,4 @@
-package com.app.hexagonal.infrastructure.entity;
+package com.app.hexagonal.infrastructure.persistence.entity;
 
 import java.io.Serializable;
 

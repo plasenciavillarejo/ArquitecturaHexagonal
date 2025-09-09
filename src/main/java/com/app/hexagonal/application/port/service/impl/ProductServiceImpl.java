@@ -1,18 +1,18 @@
-package com.app.hexagonal.application.service.impl;
+package com.app.hexagonal.application.port.service.impl;
 
 import org.springframework.stereotype.Service;
 
-import com.app.hexagonal.application.service.IProductService;
-import com.app.hexagonal.application.service.facade.IProductFacadeService;
+import com.app.hexagonal.application.port.in.IProductService;
+import com.app.hexagonal.application.port.out.IProductRepositoryPort;
 import com.app.hexagonal.domain.model.ProductModel;
 
 // Lógica de negocio exclusiva del controlador
 @Service
 public class ProductServiceImpl implements IProductService {
 
-  private final IProductFacadeService productFacadeService;
+  private final IProductRepositoryPort productFacadeService;
 
-  public ProductServiceImpl(IProductFacadeService productFacadeService) {
+  public ProductServiceImpl(IProductRepositoryPort productFacadeService) {
     this.productFacadeService = productFacadeService;
   }
 

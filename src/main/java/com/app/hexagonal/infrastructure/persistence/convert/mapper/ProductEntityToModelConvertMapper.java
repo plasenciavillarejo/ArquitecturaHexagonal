@@ -1,9 +1,9 @@
-package com.app.hexagonal.infrastructure.convert.mapper;
+package com.app.hexagonal.infrastructure.persistence.convert.mapper;
 
 import org.springframework.stereotype.Component;
 
 import com.app.hexagonal.domain.model.ProductModel;
-import com.app.hexagonal.infrastructure.entity.ProductEntity;
+import com.app.hexagonal.infrastructure.persistence.entity.ProductEntity;
 
 @Component
 public class ProductEntityToModelConvertMapper {

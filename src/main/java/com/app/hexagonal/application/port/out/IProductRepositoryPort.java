@@ -1,8 +1,8 @@
-package com.app.hexagonal.application.service.facade;
+package com.app.hexagonal.application.port.out;
 
 import com.app.hexagonal.domain.model.ProductModel;
 
-public interface IProductFacadeService {
+public interface IProductRepositoryPort {
 
   public ProductModel findById();
  

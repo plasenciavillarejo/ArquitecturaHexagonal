@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.app.hexagonal.application.service.IProductService;
+import com.app.hexagonal.application.port.in.IProductService;
 import com.app.hexagonal.infrastructure.web.convert.mapper.ProductModelDtoConvertMapper;
 import com.app.hexagonal.infrastructure.web.request.dto.ProductModelRequestDto;
 

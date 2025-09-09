@@ -1,4 +1,4 @@
-package com.app.hexagonal.application.service;
+package com.app.hexagonal.application.port.in;
 
 import com.app.hexagonal.domain.model.ProductModel;
 
