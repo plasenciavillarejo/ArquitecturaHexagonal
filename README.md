@@ -17,6 +17,19 @@ HTTP Request → Controller → Use Case → Repository Port → Adapter JPA →
 
 El objetivo principal es servir como ejemplo de buenas prácticas para proyectos basados en DDD + arquitectura hexagonal, asegurando un código modular, testeable y escalable.
 
+# 🏗️ Arquitectura Hexagonal - Ejemplo
+
+Este proyecto implementa una arquitectura **Clean/Hexagonal** en Java con **Spring Boot**, separando claramente los distintos niveles de la aplicación: 
+
+- **Domain** → Modelos puros y excepciones.  
+- **Application** → Casos de uso (Use Cases), definidos a través de **puertos IN/OUT**.  
+- **Infrastructure** → Adaptadores (Web, Persistencia, Seguridad, etc.).  
+
+---
+
+## 🔄 Flujo general de la aplicación
+
+
 HTTP Request
    │
    ▼
