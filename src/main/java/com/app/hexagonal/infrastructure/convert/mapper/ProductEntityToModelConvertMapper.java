@@ -14,5 +14,12 @@ public class ProductEntityToModelConvertMapper {
     pm.setNameProductModel(productEntity.getNameEntity());
     return pm;
   }
+  
+  public ProductEntity convertModelToEntity(ProductModel pm) {
+    ProductEntity pe = new ProductEntity(); 
+    pe.setIdEntity(pm.getIdProductModel());
+    pe.setNameEntity(pm.getNameProductModel());    
+    return pe;
+  }
 
 }

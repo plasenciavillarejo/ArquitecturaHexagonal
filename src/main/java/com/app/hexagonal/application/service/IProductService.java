@@ -6,4 +6,6 @@ public interface IProductService {
 
   public ProductModel logicaNegocioControlador();
 
+  public void actualizarProducto(ProductModel productModel); 
+  
 }
