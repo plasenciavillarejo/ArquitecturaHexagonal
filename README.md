@@ -1,18 +1,18 @@
-Descripción del proyecto
+# Descripción del proyecto
 
 Este proyecto es un ejemplo de implementación de arquitectura hexagonal (Ports & Adapters / Clean Architecture) en Java con Spring Boot, que muestra cómo estructurar un backend de manera desacoplada y mantenible.
 
-Se incluyen:
+# Se incluyen:
 
-Capa de dominio: modelos y excepciones.
+- Capa de dominio: modelos y excepciones.
 
-Capa de aplicación: casos de uso (services), puertos de entrada (in) y salida (out).
+- Capa de aplicación: casos de uso (services), puertos de entrada (in) y salida (out).
 
-Capa de infraestructura: controladores REST, persistencia con JPA/Hibernate, mappers y adaptadores.
+- Capa de infraestructura: controladores REST, persistencia con JPA/Hibernate, mappers y adaptadores.
 
 Gestión de DTOs para separar modelos internos de las entidades expuestas en la API.
 
-Ejemplo funcional completo con flujo end-to-end:
+# Ejemplo funcional completo con flujo end-to-end:
 HTTP Request → Controller → Use Case → Repository Port → Adapter JPA → DB
 
 El objetivo principal es servir como ejemplo de buenas prácticas para proyectos basados en DDD + arquitectura hexagonal, asegurando un código modular, testeable y escalable.
@@ -95,7 +95,7 @@ HTTP Request
                 │
                 ▼
              Base de datos
-</details> ```
+</details>
 
 
 
