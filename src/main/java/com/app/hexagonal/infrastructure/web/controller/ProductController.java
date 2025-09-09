@@ -42,4 +42,22 @@ public class ProductController {
     return new ResponseEntity<>(HttpStatus.NO_CONTENT);
   }
   
+  /**
+   * Nota: en el caso de tener que devolver un response/dto se haría de igual modo que el anterior
+   * 
+   * 
+   @GetMapping("/productos/{idPrueba}")
+   public ResponseEntity<ProductResponseDto> obtenerProducto(@PathVariable Long idPrueba) {
+    // 1. Caso de uso devuelve un ProductModel (dominio)
+    ProductModel model = productService.devolverDtoEjemplo(idPrueba);
+
+    // 2. Mapper transforma Domain → ResponseDto
+    ProductResponseDto dto = productModelDtoConvertMapper.convertModelToResponse(model);
+
+    return new ResponseEntity<>(dto, HttpStatus.OK);
+  } 
+   * 
+   */
+  
+  
 }
