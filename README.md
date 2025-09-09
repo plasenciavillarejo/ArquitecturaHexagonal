@@ -12,6 +12,8 @@ Este proyecto es un ejemplo de implementación de arquitectura hexagonal (Ports 
 
 Gestión de DTOs para separar modelos internos de las entidades expuestas en la API.
 
+**NOTA:** ESTE FLUJO ESTÁ 
+
 # Ejemplo funcional completo con flujo end-to-end:
 HTTP Request → Controller → Use Case → Repository Port → Adapter JPA → DB
 
